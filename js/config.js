@@ -14,6 +14,6 @@
       false -> envío normal, sin modo de depuración.
 */
 window.TIENDA_CONFIG = {
-  GA_MEASUREMENT_ID: "G-XXXXXXXXXX", // <- reemplaza por tu ID, por ejemplo "G-AB12CD34EF"
+  GA_MEASUREMENT_ID: "G-NXC547WCJ2", // <- reemplaza por tu ID, por ejemplo "G-AB12CD34EF"
   DEBUG_MODE: true                   // <- true mientras pruebas; false para el envío normal
 };
