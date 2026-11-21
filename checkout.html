@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout · Cervo</title>
+<meta name="description" content="Cervo: tienda ficticia de ropa deportiva para un laboratorio académico de Google Analytics 4.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%232563eb%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Arial%27%3Ec%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="barra"><div class="barra-in contenedor"><a class="logo" href="index.html">cervo</a>
+<nav aria-label="Principal"><a href="index.html">Catálogo</a><a href="carrito.html">Carrito <span id="contador-carrito" class="burbuja">0</span></a></nav></div></header>
+<main class="contenedor"><h1 class="titulo-pag">Checkout</h1>
+<div id="vacio" hidden class="vacio"><h2>No hay productos para pagar</h2><p>Agrega algo al carrito primero.</p><a class="btn" href="index.html">Ver catálogo</a></div>
+<div class="dos-col" id="pasos"><div>
+<ol class="pasos-ind"><li id="ind1" class="activo">1. Envío</li><li id="ind2">2. Pago</li></ol>
+<section id="paso1"><h2>Envío</h2><p class="nota">Simulación: escribe un nombre inventado. No ingreses datos reales.</p>
+<label class="campo">Nombre ficticio<input id="nombre" name="alias" maxlength="40" autocomplete="off" placeholder="Ej. Cliente de prueba"></label>
+<label class="campo">País<select id="pais"></select></label>
+<fieldset class="campo"><legend>Servicio de envío</legend><div id="servicios"></div></fieldset>
+<p id="error1" class="error" role="alert"></p><button type="button" class="btn" id="btn-envio">Continuar al pago</button></section>
+<section id="paso2" hidden><h2>Pago simulado</h2><div id="pagos"></div>
+<div class="acciones"><button type="button" class="btn-sec" id="btn-volver">Volver al envío</button><button type="button" class="btn" id="btn-pagar">Pagar (simulado)</button></div></section>
+</div><aside class="resumen" id="resumen"></aside></div></main>
+<footer class="pie"><div class="contenedor"><p>Cervo es un sitio académico de simulación del Diplomado en E-commerce y Negocios Internacionales Digitales. No procesa pagos ni guarda datos personales. Usa Google Analytics 4 para medir la navegación.</p></div></footer>
+<script src="js/config.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/productos.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/monitor.js"></script>
+<script src="js/pagina-checkout.js"></script>
+</body>
+</html>
